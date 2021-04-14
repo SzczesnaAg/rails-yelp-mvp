@@ -1,19 +1,28 @@
 
-
-<p>
+<div>
   <strong>Name:</strong>
   <%= @restaurant.name %>
-</p>
+</div>
 
-<p>
+<div>
   <strong>Address:</strong>
   <%= @restaurant.address %>
-</p>
+</div>
 
-<p>
+<div>
   <strong>Phone number:</strong>
   <%= @restaurant.phone_number %>
-</p>
+</div>
+
+</div>
+  <strong>Reviews</strong>
+  <div>
+    <ul>
+      <li>Rating: </li>
+      <li>Review: </li>
+    </ul>
+  </div>
+</div>
 
 <%= link_to 'Back', restaurants_path %> |
 <%= link_to 'Add a review', new_restaurant_review_path(@restaurant) %>
